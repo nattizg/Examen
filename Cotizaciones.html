@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizaciones</title>
+</head>
+<body>
+    <header>
+        <h1>Cotizaciones</h1>
+    </header>
+    <nav>
+  <ul>
+    <li><a href="index.html">Index</a></li>
+    <li><a href="Catalogo.html">Catalogo</a></li>
+    <li><a href="Ofertas.html">Ofertas del mes</a></li>
+    <li><a href="Cotizaciones.html">Cotizaciones</a></li>
+    <li><a href="#Contacto">Contacto</a></li>
+  </ul>
+  <button type="submit">Cotizar por Whatsapp</button>
+  </nav>
+<form>
+    <label for="cantidad">Cantidad de Unidades a comprar</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+    <label for="equipo">Equipo Industrial</label>
+    <select id="equipo" name="equipo" required>
+    <option value="" disabled selected></option>
+    <option value="Trasformador Pad-mounted">Trasformador Pad-mounted- L.285,000</option>
+    <option value="Panel Solar Bifacial 580W">Panel Solar Bifacial 580W - L. 3,650</option>
+    <option value="Cable de cobre 4/0 AWG">Cable de cobre 4/0 AWG - L.150</option>
+    <option value="Inversor hibrido 15kw">Inversor hibrido 15kw - L.98,765</option>
+    <option value="Arrancador suave 75 HP">Arrancador suave 75 HP -L.46,700</option>
+    <option value="Centro de carga">Centro de carga -L. 10,300</option>
+    </select>
+
+    <label for="ciudad">Ciudad de entrega y flete</label>
+    <select id="ciudad" name="ciudad" required>
+    <option value="" disabled selected></option>
+    <option value="San Pedro Sula">San Pedro Sula - Flete:- L.500</option>
+    <option value="Tegucigalpa">TEgucigalpa - Flete:- L.1200</option>
+    <option value="Otras Regiones">Otras Regiones - Flete:- L.2000</option>
+    
+    </select>
+    <section>
+    <p>"Descuento comercial del 8% automatico en ordenes de 5 o mas unidades"</p>
+    </section>
+
+    <section>
+    <button type="submit">Calcular Presupuesto</button>
+    </section>
+    <section>
+        <p>EL total estimado de su cotizacion es L.5000</p>
+    </section>
+</form>
+</body>
+</html>
+
