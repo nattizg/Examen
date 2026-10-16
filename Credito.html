@@ -4,48 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requisitos y Licitacion</title>
+    <script src="https://cdn.tailwindcss.com" ></script>
 </head>
 <body>
-    <header>
-        <h1>Requisitos y Licitacion B2B</h1>
-    </header>
-    <nav>
-  <ul>
-    <li><a href="index.html">Index</a></li>
-    <li><a href="Catalogo.html">Catalogo</a></li>
-    <li><a href="#Ofertas">Ofertas del mes</a></li>
-    <li><a href="Cotizaciones.html">Cotizaciones</a></li>
-    <li><a href="#Contacto">Contacto</a></li>
-    <li><a href="Credito.html">Credito</a></li>
-  </ul>
-  <button type="submit">Cotizar por Whatsapp</button>
-  </nav>
-  <fieldset>
-    <form>
-        <label for="empresa">Nombre de la Empresa o Contratista Solicitante: </label>
-        <input type="text" id="empresa" name="empresa" placeholder="Ej. Corporación Textil S.A." minlength="5" maxlength="150" required>
-        <label for="rtn">RTN: </label>
-        <input type="text" id="rtn" name="rtn" pattern="[0-9]{14}" placeholder="08012007204980" min="14" maxlength="14" required>
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" placeholder="correo@dominio.com"  required> 
-        <label for="telefono">Teléfono de Contacto:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="+504 0000-0000" pattern="[0-9]{4}-[0-9]{4}" required>
+    <header class="sticky top-0 z-50 backdrop-blur-md border-b border-slate-800 shadow-lg bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <h1 class="text-lg sm:text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                        Requisitos y Licitacion B2B
+                    </h1>
+                    <img src="" class="max-h-10 w-auto object-contain hidden sm:block">
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 text-right leading-relaxed font-medium">
+                    <span class="block text-slate-400">Contactp: <strong class="text-white">+504 9878-5643</strong></span>
+                    <span class="block text-slate-400">Horario: <strong class="text-slate-200">Lun-Vie 8am-5pm</strong></span>
+                </p>
+        </div>
+    </div>
+</header>
+<nav id="nav-menu" class="hidden md:flex bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-md sticky top-20 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center justify-between py-4 md:py-3">
 
-        <label for="depto">Departamento de entrega</label>
-        <select id="depto" name="depto" required>
-        <option value="" disabled selected></option>
-        <option value="Cortes">Cortes</option>
-        <option value="Francisco Morazan">Francisco Morazan</option>
-        <option value="Choluteca">Choluteca</option>
-        <option value="Comayagua">Comayagua</option>
-        <option value="Olancho">OLancho</option>
+        <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-sm font-medium w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
+            <li><a href="index.html" class="hover:text-slate-300 transition-colors">Inicio</a></li>
+            <li><a href="Catalogo.html" class="hover:text-slate-300 transition-colors">Catalogo</a></li>
+            <li><a href="#Ofertas" class="hover:text-slate-300 transition-colors">Ofertas del mes</a></li>
+            <li><a href="Cotizaciones.html" class="hover:text-slate-300 transition-colors">Cotizaciones</a></li>
+            <li><a href="#Contacto" class="hover:text-slate-300 transition-colors">Contacto</a></li>
+            <li><a href="Credito.html" class="hover:text-slate-300 transition-colors">Credito</a></li>
+        </ul>
 
-        <label for="Terminos">
-        <input type="checkbox" id="terminos" name="terminos" value="terminos" required> 
-        Acepto los terminos de garantia tecnica y cotizacion
-        </label>
+        <button type="submit" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors shadow-md w-full md:w-auto">
+            Cotizar por Whatsapp
+        </button>
+    </div>
+</nav>
+ <fieldset class="max-w-lg mx-auto p-6 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-4">
+    <form class="space-y-4">
 
-        <button type="submit">Enviar Formulario</button>
-        <button type="reset">Limpiar Formulario</button>
-    </fieldset>
+        <div class="flex flex-col space-y-1">
+            <label for="empresa" class="text-sm font-semibold text-slate-700">Nombre de la Empresa o Contratista Solicitante:</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Ej. Corporación Textil S.A." minlength="5" maxlength="150" required
+                class="px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+        </div>
+
+        <div class="flex flex-col space-y-1">
+            <label for="rtn" class="text-sm font-semibold text-slate-700">RTN:</label>
+            <input type="text" id="rtn" name="rtn" pattern="[0-9]{14}" placeholder="08012007204980" min="14" maxlength="14" required
+                class="px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+        </div>
+
+        <div class="flex flex-col space-y-1">
+            <label for="correo" class="text-sm font-semibold text-slate-700">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="correo@dominio.com" required 
+                class="px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+        </div>
+
+        <div class="flex flex-col space-y-1">
+            <label for="telefono" class="text-sm font-semibold text-slate-700">Teléfono de Contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+504 0000-0000" pattern="[0-9]{4}-[0-9]{4}" required
+                class="px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+        </div>
+
+        <div class="flex flex-col space-y-1">
+            <label for="depto" class="text-sm font-semibold text-slate-700">Departamento de entrega</label>
+            <select id="depto" name="depto" required
+                class="px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm bg-white">
+                <option value="" disabled selected></option>
+                <option value="Cortes">Cortes</option>
+                <option value="Francisco Morazan">Francisco Morazan</option>
+                <option value="Choluteca">Choluteca</option>
+                <option value="Comayagua">Comayagua</option>
+                <option value="Olancho">OLancho</option>
+            </select>
+        </div>
+
+        <div class="flex items-center space-x-2 pt-2">
+            <input type="checkbox" id="terminos" name="terminos" value="terminos" required class="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500">
+            <label for="terminos" class="text-sm text-slate-600">Acepto los terminos de garantia tecnica y cotizacion</label>
+        </div>
+
+        <div class="flex space-x-3 pt-4">
+            <button type="submit" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors text-sm shadow-sm">
+                Enviar Formulario
+            </button>
+            <button type="reset" class="flex-1 bg-slate-200 hover:bg-slate-300 text-slate-700 font-medium py-2 px-4 rounded-lg transition-colors text-sm">
+                Limpiar Formulario
+            </button>
+        </div>
+    </form>
+</fieldset>
+    <footer class="py-6 px-4 bg-slate-900 text-slate-300 text-center text-sm">
+    <p class="mb-2">
+        Boulevard del Norte, San Pedro Sula - Tel:2551-5634<br>
+        Anillo Periferico, Tegucigalpa - Tel:2356-8765
+    </p>
+    <p class="text-xs text-slate-500">&copy 2026 Deinsa Honduras|| Todos los derechos reservados</p>
+</footer>
 </html>
