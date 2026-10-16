@@ -7,214 +7,251 @@
     <script src="https://cdn.tailwindcss.com" ></script>
 </head>
 <body>
-    <header>
-        <h1>Catalogo de productos</h1>
-    </header>
-    <nav>
-  <ul>
-    <li><a href="index.html">Index</a></li>
-    <li><a href="Catalogo.html">Catalogo</a></li>
-    <li><a href="Cotizaciones.html">Cotizaciones</a></li>
-    <li><a href="Credito.html">Credito</a></li>
-  </ul>
-  <button type="submit">Cotizar por Whatsapp</button>
-  </nav>
+<header class="sticky top-0 z-50 backdrop-blur-md border-b border-slate-800 shadow-lg bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <a class="flex items-center justify-between w-full group" href="#inicio">
+                <div class="flex items-center gap-3">
+                    <h1 class="text-lg sm:text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                        Catalogo de Productos
+                    </h1>
+                    <img src="" class="max-h-10 w-auto object-contain hidden sm:block">
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 text-right leading-relaxed font-medium">
+                    <span class="block text-slate-400">Contactp: <strong class="text-white">+504 9878-5643</strong></span>
+                    <span class="block text-slate-400">Horario: <strong class="text-slate-200">Lun-Vie 8am-5pm</strong></span>
+                </p>
+            </a>
+        </div>
+    </div>
+</header>
+<nav id="nav-menu" class="hidden md:flex bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-md sticky top-20 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center justify-between py-4 md:py-3">
+
+        <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-sm font-medium w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
+            <li><a href="index.html" class="hover:text-slate-300 transition-colors">Inicio</a></li>
+            <li><a href="Catalogo.html" class="hover:text-slate-300 transition-colors">Catalogo</a></li>
+            <li><a href="index.html#Ofertas" class="hover:text-slate-300 transition-colors">Ofertas del mes</a></li>
+            <li><a href="Cotizaciones.html" class="hover:text-slate-300 transition-colors">Cotizaciones</a></li>
+            <li><a href="index.html#Contacto" class="hover:text-slate-300 transition-colors">Contacto</a></li>
+            <li><a href="Credito.html" class="hover:text-slate-300 transition-colors">Credito</a></li>
+        </ul>
+
+        <button type="submit" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors shadow-md w-full md:w-auto">
+            Cotizar por Whatsapp
+        </button>
+    </div>
+</nav>
    <main>
-    <section>
-        <img src="img/Trasformador Pad-mounted.png" alt="Trasformador Pad-mounted" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Trasformador Pad-mounted</h4>
-            <p>Categoria: Media Tension</p>
-            <Precio>L.285,000</Precio>
-            <p>Detalles Tecnicos:Capacidad en kw/kvA</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Panel Solar Bifacial 580W.webp" alt="Panel Solar Bifacial 580W" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Panel Solar Bifacial 580W</h4>
-            <p>Categoria:Energia Solar</p>
-            <Precio>L. 3,650</Precio>
-            <p>Detalles Tecnicos:Garantia en años</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Cable de cobre .jpg" alt="Cable de cobre 4/0 AWG" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Cable de cobre 4/0 AWG</h4>
-            <p>Categoria:Conductores</p>
-            <Precio>L.150</Precio>
-            <p>Detalles Tecnicos:Tension nominal en Voltios</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Inversor hibrido 15kw.webp" alt="Inversor hibrido 15kw" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Inversor hibrido 15kw</h4>
-            <p>Categoria:Fuerza Motiz</p>
-            <Precio>L.98,765</Precio>
-            <p>Detalles Tecnicos:Capacidad en kW/kVa</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Arrancador Suave.jpeg" alt="Arrancador suave 75 HP" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Arrancador suave 75 HP</h4>
-            <p>Categoria: Fuerza Motiz</p>
-            <precio>L.46,700</precio>
-            <p>Detalles Tecnicos</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/centro de carga.webp" alt="Centro de carga" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Centro de carga</h4>
-            <p>Categoria:Media Tension</p>
-            <precio>L. 10,300</precio>
-            <p>Detalles Tecnicos: Capacidad kW/kVa</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Aire Acondicionado Industrial.jpg" alt="Aire Acondicionado Industrial" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Aire Acondicionado Industrial</h4>
-            <p>Categoria:Garantia en Años</p>
-            <Precio>L.820,000</Precio>
-            <p>Detalles Tecnicos:Capacidad en kw/kvA</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Interruptor Principal.png" alt="Interruptor Principal" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Interruptor Principal</h4>
-            <p>Categoria:Fuerza Motiz</p>
-            <Precio>L.943</Precio>
-            <p>Detalles Tecnicos:Tension nominal en Voltios</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Fotocelda.jpg" alt="Foto Celda" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Foto celda</h4>
-            <p>Categoria:Energia Solar</p>
-            <Precio>L.230</Precio>
-            <p>Detalles Tecnicos:Garantia en años</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Tuvo PVC.webp" alt="Tuvo PVC" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Tuvo PVC</h4>
-            <p>Categoria:Electrica</p>
-            <Precio>L.70</Precio>
-            <p>Detalles Tecnicos:Diametro de 20mm</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Conductores alta tension.png" alt="Conductores alta tension" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto: Conductores alta tension</h4>
-            <p>Categoria:Conductores</p>
-            <Precio>L.1030</Precio>
-            <p>Detalles Tecnicos:Capacidad en kw/kvA</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Luminaria Industrial.webp" alt="Luminaria Industrial" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Luminaria Industrial</h4>
-            <p>Categoria:Luminarias</p>
-            <Precio>L.2,500</Precio>
-            <p>Detalles Tecnicos:Capacidad en kw/kvA</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Bomba de Agua.jpg" alt="Bomba de Agua" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Bomba de Agua</h4>
-            <p>Categoria: Fuerza Motiz</p>
-            <Precio>L.6,700</Precio>
-            <p>Detalles Tecnicos:Garantia en Años</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Sensor Solar.webp" alt="Sensor Solar" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto: Sensor Solar</h4>
-            <p>Categoria: Energia Solar</p>
-            <Precio>L.4,285</Precio>
-            <p>Detalles Tecnicos:Capacidad en kw/kvA</p>
-        </figcaption>
-    </section>
-    <section>
-        <img src="img/Motor Electrico.jpg" alt="Motor Electrico" width="100%" height="auto">
-        <figcaption>
-            <h4>Nombre producto:Motor Electrico</h4>
-            <p>Categoria: Fuerza Motiz</p>
-            <Precio>L.950,500</Precio>
-            <p>Detalles Tecnicos:Capacidad en kw/kvA</p>
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 max-w-7xl mx-auto">
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Trasformador Pad-mounted.png" alt="Trasformador Pad-mounted" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Trasformador Pad-mounted</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria: Media Tension</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.285,000</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kw/kvA</p>
         </figcaption>
     </section>
 
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Panel Solar Bifacial 580W.webp" alt="Panel Solar Bifacial 580W" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Panel Solar Bifacial 580W</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Energia Solar</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L. 3,650</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Garantia en años</p>
+        </figcaption>
+    </section>
 
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Cable de cobre .jpg" alt="Cable de cobre 4/0 AWG" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Cable de cobre 4/0 AWG</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Conductores</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.150</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Tension nominal en Voltios</p>
+        </figcaption>
+    </section>
 
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Inversor hibrido 15kw.webp" alt="Inversor hibrido 15kw" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Inversor hibrido 15kw</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Fuerza Motiz</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.98,765</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kW/kVa</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Arrancador Suave.jpeg" alt="Arrancador suave 75 HP" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Arrancador suave 75 HP</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria: Fuerza Motiz</p>
+            <precio class="text-2xl font-black text-emerald-600 mb-2">L.46,700</precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/centro de carga.webp" alt="Centro de carga" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Centro de carga</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Media Tension</p>
+            <precio class="text-2xl font-black text-emerald-600 mb-2">L. 10,300</precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos: Capacidad kW/kVa</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Aire Acondicionado Industrial.jpg" alt="Aire Acondicionado Industrial" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Aire Acondicionado Industrial</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Garantia en Años</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.820,000</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kw/kvA</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Interruptor Principal.png" alt="Interruptor Principal" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Interruptor Principal</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Fuerza Motiz</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.943</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Tension nominal en Voltios</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Fotocelda.jpg" alt="Foto Celda" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Foto celda</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Energia Solar</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.230</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Garantia en años</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Tuvo PVC.webp" alt="Tuvo PVC" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Tuvo PVC</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Electrica</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.70</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Diametro de 20mm</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Conductores alta tension.png" alt="Conductores alta tension" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto: Conductores alta tension</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Conductores</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.1030</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kw/kvA</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Luminaria Industrial.webp" alt="Luminaria Industrial" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Luminaria Industrial</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria:Luminarias</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.2,500</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kw/kvA</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Bomba de Agua.jpg" alt="Bomba de Agua" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Bomba de Agua</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria: Fuerza Motiz</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.6,700</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Garantia en Años</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Sensor Solar.webp" alt="Sensor Solar" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto: Sensor Solar</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria: Energia Solar</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.4,285</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kw/kvA</p>
+        </figcaption>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm relative flex flex-col justify-between overflow-hidden">
+        <img src="img/Motor Electrico.jpg" alt="Motor Electrico" width="100%" height="auto" class="h-48 object-contain mb-4">
+        <figcaption class="flex flex-col">
+            <h4 class="text-lg font-bold text-slate-800 mb-1">Nombre producto:Motor Electrico</h4>
+            <p class="text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded w-max mb-3">Categoria: Fuerza Motiz</p>
+            <Precio class="text-2xl font-black text-emerald-600 mb-2">L.950,500</Precio>
+            <p class="text-xs text-slate-500">Detalles Tecnicos:Capacidad en kw/kvA</p>
+        </figcaption>
+    </section>
+</main>
 
     <section>
-    <table>
-        <legend>Especificaciones tecnicas</legend>
-  <thead>
-    <tr>
-      <th>Codigo</th>
-      <th>Equipo Industrial</th>
-      <th>Tension Nominal</th>
-      <th>Capacidad</th>
-      <th>Norma Tecnica</th>
-      <th>Estado de homologacion ENEE</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>101</td>
-      <td>Trasformador Pad-mounted</td>
-      <td>10kV</td>
-      <td>Media</td>
-      <td>ASTM</td>
-      <td>Aprobado</td>
-    </tr>
-    <tr>
-      <td>102</td>
-      <td>Panel Solar Bifacial</td>
-      <td>580W</td>
-      <td>Alto</td>
-      <td>IEEE</td>
-      <td>En revision</td>
-    </tr>
-    <tr>
-      <td>103</td>
-      <td>Cable de cobre</td>
-      <td>4/0 AWG</td>
-      <td>Bajo</td>
-      <td>UL</td>
-      <td>Aprobado</td>
-    </tr>
-    <tr>
-      <td>104</td>
-      <td>Centro de carga</td>
-      <td>10V</td>
-      <td>Bajo</td>
-      <td>ASTM</td>
-      <td>En revision</td>
-    </tr>
-    </tbody>
+   <section class="max-w-4xl mx-auto p-6 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-4 my-8">
+    <table class="w-full text-left border-collapse">
+        <legend class="text-lg font-bold text-slate-800 mb-4 px-1">Especificaciones tecnicas</legend>
+        <thead>
+            <tr class="bg-slate-100 border-b border-slate-200 text-xs font-semibold text-slate-700 uppercase tracking-wider">
+                <th class="p-3">Codigo</th>
+                <th class="p-3">Equipo Industrial</th>
+                <th class="p-3">Tension Nominal</th>
+                <th class="p-3">Capacidad</th>
+                <th class="p-3">Norma Tecnica</th>
+                <th class="p-3">Estado de homologacion ENEE</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-sm text-slate-700">
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3 font-medium">101</td>
+                <td class="p-3">Trasformador Pad-mounted</td>
+                <td class="p-3">10kV</td>
+                <td class="p-3">Media</td>
+                <td class="p-3">ASTM</td>
+                <td class="p-3"><span class="px-2 py-1 text-xs font-medium text-emerald-700 bg-emerald-50 rounded-full">Aprobado</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3 font-medium">102</td>
+                <td class="p-3">Panel Solar Bifacial</td>
+                <td class="p-3">580W</td>
+                <td class="p-3">Alto</td>
+                <td class="p-3">IEEE</td>
+                <td class="p-3"><span class="px-2 py-1 text-xs font-medium text-amber-700 bg-amber-50 rounded-full">En revision</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3 font-medium">103</td>
+                <td class="p-3">Cable de cobre</td>
+                <td class="p-3">4/0 AWG</td>
+                <td class="p-3">Bajo</td>
+                <td class="p-3">UL</td>
+                <td class="p-3"><span class="px-2 py-1 text-xs font-medium text-emerald-700 bg-emerald-50 rounded-full">Aprobado</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3 font-medium">104</td>
+                <td class="p-3">Centro de carga</td>
+                <td class="p-3">10V</td>
+                <td class="p-3">Bajo</td>
+                <td class="p-3">ASTM</td>
+                <td class="p-3"><span class="px-2 py-1 text-xs font-medium text-amber-700 bg-amber-50 rounded-full">En revision</span></td>
+            </tr>
+        </tbody>
     </table>
 </section>
    </main>
 </body>
-<footer>
-    <p>
-        Boulevard del Norte, San Pedro Sula - Tel:2551-5634
+<footer class="py-6 px-4 bg-slate-900 text-slate-300 text-center text-sm">
+    <p class="mb-2">
+        Boulevard del Norte, San Pedro Sula - Tel:2551-5634<br>
         Anillo Periferico, Tegucigalpa - Tel:2356-8765
     </p>
-    &copy 2026 Deinsa Honduras|| Todos los derechos reservados
+    <p class="text-xs text-slate-500">&copy 2026 Deinsa Honduras|| Todos los derechos reservados</p>
 </footer>
 </html>
